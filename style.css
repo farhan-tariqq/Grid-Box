@@ -1,0 +1,33 @@
+/* (A) CONTAINER */
+#grid-layout {
+    /* (A1) GRID LAYOUT */
+    display: grid;
+    grid-gap: 10px;
+   
+    /* (A2) DESIGN YOUR GRID TEMPLATE */
+    grid-template-areas:
+    "head head head"
+    "main main side"
+    "foot foot foot";
+  }
+  
+  /* (B) GRID CELLS */
+  .cell { padding: 10px; }
+   
+  /* (C) ASSIGN THE AREAS */
+  .head {
+    grid-area: head;
+    background: #ffe5db;
+  }
+  .main {
+    grid-area: main;
+    background: #e3ffdb;
+  }
+  .side {
+    grid-area: side;
+    background: #dbf8ff;
+  }
+  .foot {
+    grid-area: foot;
+    background: #ebebeb;
+  }
